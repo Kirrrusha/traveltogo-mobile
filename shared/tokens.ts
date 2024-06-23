@@ -1,6 +1,7 @@
 export const Colors = {
 	black: '#0A1121',
 	blue: '#007CC2',
+	blueHover: '#007cc2b3',
 	mediumBlue: '#89C8E8',
 	lightBlue: '#C4E3F4',
 	red: '#DB3734',
@@ -8,6 +9,8 @@ export const Colors = {
 	lightGreen: '#F1F8EA',
 	gray: '#E5E3DF',
 	white: '#FFFFFF',
+	labelGray: '#6C707A',
+	delimiter: '#DBDDE1',
 };
 
 export const Gaps = {
@@ -20,6 +23,7 @@ export const Gaps = {
 
 export const Radius = {
 	r10: 10,
+	r12: 12,
 	r17: 17,
 };
 
@@ -30,6 +34,6 @@ export const Fonts = {
 	f18: 18,
 	f20: 20,
 	f21: 21,
-	regular: 'FiraSans-Regular',
-	semibold: 'FiraSans-SemiBold',
+	regular: 'Inter_400Regular',
+	bold: 'Inter_700Bold',
 };

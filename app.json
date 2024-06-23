@@ -26,6 +26,20 @@
     "plugins": [
       "expo-router"
     ],
-    "scheme": "traveltogo-mobile"
+    "scheme": "traveltogo-mobile",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "9b2bb4fe-5b8f-412b-a3e4-dfe83217b002"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/9b2bb4fe-5b8f-412b-a3e4-dfe83217b002"
+    }
   }
 }

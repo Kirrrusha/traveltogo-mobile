@@ -1,6 +1,6 @@
 import { Colors } from '@/shared/tokens';
 import { Notification } from '@/shared/ui/Notification';
-import { Inter_400Regular, useFonts } from '@expo-google-fonts/inter';
+import { Inter_400Regular, Inter_700Bold, useFonts } from '@expo-google-fonts/inter';
 import { SplashScreen, Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
@@ -11,6 +11,7 @@ SplashScreen.preventAutoHideAsync();
 export default function RootLayout() {
 	const [loaded, error] = useFonts({
 		Inter_400Regular,
+		Inter_700Bold,
 	});
 
 	useEffect(() => {
@@ -45,6 +46,18 @@ export default function RootLayout() {
 				<Stack.Screen name="index" />
 				<Stack.Screen
 					name="destination"
+					options={{
+						presentation: 'modal',
+					}}
+				/>
+				<Stack.Screen
+					name="calendar"
+					options={{
+						presentation: 'modal',
+					}}
+				/>
+				<Stack.Screen
+					name="guest_room"
 					options={{
 						presentation: 'modal',
 					}}
